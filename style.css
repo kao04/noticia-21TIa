@@ -99,5 +99,35 @@ body {
     color: var(--silver);
     font-size: .9375rem;
     line-height: 1.625rem;
+}
 
+.terceira-section > div{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.terceira-section img{
+    max-width: 6.25rem;
+}
+
+.terceira-section strong{
+    color: var(--silver);
+    font-size: 2rem;
+    line-height: 100%;
+}
+
+.terceira-section h2{
+    color: var(--dark-blue);
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+    margin-block: .6rem;
+}
+
+.terceira-section p{
+    color: var(--gunmetal);
+    font-size: .9375rem;
+    line-height: 1.625rem;
 }
