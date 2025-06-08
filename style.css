@@ -65,3 +65,39 @@ body {
     letter-spacing: .275rem;
     line-height: 1.5rem;
 }
+
+.segunda-section {
+    background-color: var(--dark-blue);
+    margin-bottom: 4rem;
+    padding: 1.5rem 1.1rem;
+}
+
+.margem-borda-padding {
+    border-bottom: 1px solid var(--silver);
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+
+
+.segunda-section h2{
+    color: var(--yellow);
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 2.2rem;
+}
+
+.segunda-section h3{
+    color: var(--almost-white);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+}
+
+.segunda-section p{
+    color: var(--silver);
+    font-size: .9375rem;
+    line-height: 1.625rem;
+
+}
