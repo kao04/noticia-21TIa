@@ -44,6 +44,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header nav.mobile {
@@ -80,7 +81,11 @@ header .mobile a {
     line-height: 1.5rem;
 }
 
-main{
+header .desktop{
+    display: none;
+}
+
+main {
     max-width: 1110px;
     margin-inline: auto;
 }
@@ -187,42 +192,12 @@ main{
     line-height: 1.625rem;
 }
 
-@media(min-width: 1110px){
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.75rem;
-    }
-
-    .primeira-section{
-        grid-column: 1/3;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.75rem;
-    }
-
-    .primeira-section picture{
-        grid-column: 1/3;
-    }
-
-    .primeira-section img{
-        margin: 0;
-    }
-
-    .primeira-section h1{
-        font-size: 3.5rem;
-    }
-
-    .segunda-section h2{
-        font-size: 2.5rem;
-    }
-
-    header > button{
+@media(min-width: 1110px) {
+    header>button {
         display: none;
     }
 
-    header .desktop{
+    header .desktop {
         display: flex;
         gap: 2.5rem;
     }
@@ -232,5 +207,58 @@ main{
         line-height: 1.625rem;
         text-decoration: none;
         color: var(--gunmetal);
-        }
+    }
+
+    header .desktop a:hover {
+        color: var(--vermillion);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .primeira-section {
+        grid-column: 1/3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
+    }
+
+    .primeira-section picture {
+        grid-column: 1/3;
+    }
+
+    .primeira-section img {
+        margin: 0;
+    }
+
+    .primeira-section h1 {
+        font-size: 3.5rem;
+    }
+
+    .primeira-section button:hover {
+        background-color: var(--dark-blue);
+        cursor: pointer;
+    }
+
+    .segunda-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .terceira-section a{
+        text-decoration: none;
+    }
+
+    .terceira-section{
+        display: flex;
+        grid-column: 1/4;
+    }
+
+    .terceira-section h2:hover{
+        color: var(--vermillion);
+        cursor: pointer;
+    }
 }
